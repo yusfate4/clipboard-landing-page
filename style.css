@@ -1,283 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
-*{
-    margin: 0;
+
+* {
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+	box-sizing: border-box;
 }
 
-
-
-body{
-    font-size: 18px;
-    font-family: 'Bai Jamjuree', sans-serif;
-    line-height: 1.5;
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
 }
 
-main{
-    margin: 0 auto;
-    max-width: 100%;
-    /* width: 1200px; */
-    text-align: center;
-    
+body {
+	color: var(--dark-grayish-blue);
+	font-family: 'Bai Jamjuree', sans-serif;
+	margin: 0;
+	text-align: center;
 }
 
-
-/* header */
-#header{
-    /* border: 3px solid red; */
-    padding: 100px;
-    margin: 0 auto;
-    width: 100%;
-    background-image: url(images/bg-header-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
+	background-image: url('./images/bg-header-desktop.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0 20px;
 }
 
-.header__text{
-    font-size: 1.5rem;
-    color: hsl(210, 10%, 33%);
-    font-weight: 600;
-   
-   
+img {
+	max-width: 100%;
 }
 
-.header__text__paragraph{
-    font-size: 1.125rem;
-   font-weight: 400;    
-    
+p {
+	color: var(--grayish-blue);
+	line-height: 1.5;
 }
 
-.btn{
-    padding: 15px 35px;
-    border-radius: 50px;
-    font-family: 'Bai Jamjuree', sans-serif;
-    margin: 15px 5px;
-    font-size: 1.125rem;
-    color: #fff;
-    font-weight: 600;
-    border: none;
+.container {
+	padding: 0 20px;
+	margin: 30px auto;
+	max-width: 100%;
+	width: 1200px;
 }
 
-.btn-primary{
-    background-color: hsl(171, 66%, 44%);
-    box-shadow: 0 4px hsl(171, 68%, 36%);;
+.container-small {
+	width: 700px;
 }
 
-.btn-secondary{
-    background-color: hsl(233, 100%, 69%);
-    box-shadow: 0 4px hsl(233, 71%, 61%);
+section {
+	padding: 30px 0;
 }
 
-.track{
-    width: 100%
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.track-text{
-    font-size: 2.125rem;
-    color: hsl(210, 10%, 33%);
-    margin-bottom: 30px;
+.flex > * {
+	flex: 1;
+	padding: 10px;
 }
 
-.track-paragraph{
-    font-size: 1.125rem;
-    color: hsl(201, 11%, 66%);
-    width: 59%;
-    margin: 0 auto;
-
-}
-
-img{
-   max-width: 100%;
-   
-}
-
-.aside{
-    display: flex;
-    padding: 80px 0;
-    justify-content: center;
-    width: 100%;
-
+.m4 {
+	margin: 100px auto;
 }
 
 .computer__text{
-    margin-left: 100px;
-    text-align: left; 
+    text-align: left;
+    margin: 50px 0 10px 50px;
+
 }
-
-.computer__text__paragraph{
-    margin-top: 50px;
-    width: 70%;
+.computer__paragraph{
+    text-align: left;
+    margin-left: 50px;
 }
-
-
-.search{
-    color: hsl(210, 10%, 33%);
-    font-size: 1.7rem;
-}
-
-.search__paragraph{
-    color: hsl(201, 11%, 66%);
-}
-
 
 .access{
-    padding: 50px 0;
-    width: 100%;
-}
-
-.access__text{
-    color: hsl(210, 10%, 33%);
-    font-size: 1.7rem;
-    
-}
-img{
-    max-width: 100%;
-}
-.access__paragraph{
-    color: hsl(201, 11%, 66%);
-    width: 60%;
-    position: relative;
-    left: 300px;
-    margin-top: 30px;
-}
-
-.img__device{
-    margin: 50px 0;
-    width: 60%;
-}
-
-.workflow{
-    margin: 0 0 50px 0;
-}
-
-.workflow__text{
-    color: hsl(210, 10%, 33%);
-    font-size: 2rem;
-}
-
-.workflow__paragraph{
-    color: hsl(201, 11%, 66%);
-    font-size: 1.125rem;
-    margin-top: 10px;
-}
-
-.list_item{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.list_item_text{
-    color: hsl(210, 10%, 33%);
-    font-size: 1.7rem;
-    margin-top: 30px;
-    
-}
-
-.list_item_paragraph{
-    color: hsl(201, 11%, 66%);
-    font-size: 1.125rem;
-    margin-top: 10px;
-    width: 75%;
-    margin-left: 50px;
-    /* text-align: center;
-    position: relative;
-    left: 50px; */
-   
-}
-
-.company__logos{
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 100%;
-
-}
-
-.ios__clipboard{
-    width: 100%;
-    padding-bottom: 80px;
-}
-
-.ios__text{
-    color: hsl(210, 10%, 33%);
-    font-size: 1.7rem;
-}
-
-.ios__paragraph{
-    color: hsl(201, 11%, 66%);
-    font-size: 1.125rem;
-    margin-top: 10px;
-    width: 58%;
-    margin-left: 300px;
+    padding-bottom: 50px;
 }
 
 
-footer{
-    background-color: hsl(200, 8%, 93%);
-    padding-top: 100px;
 
+
+.btn {
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 35px;
+	margin: 15px 5px;
 }
 
-.about{
-    display: flex;    
+.btn-primary {
+	background-color: var(--strong-cyan);
+	box-shadow: 0 4px hsl(171, 68%, 36%);
 }
 
-.last-logo{
-    margin: 0 50px 50px 50px;
+.btn-secondary {
+	background-color: var(--light-blue);
+	box-shadow: 0 4px hsl(233, 71%, 61%);
 }
 
-.links{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40px 40px;
+footer {
+	background-color: hsl(0, 0%, 93%);
 }
 
-.social img{
-    width: 50%;
+footer img {
+	width: 60px;
 }
 
-footer ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-   
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style-type: none;
+}
+
+footer .container {
+	margin-bottom: 0;
 }
 
 footer ul a {
-    color: hsl(210, 10%, 33%);
-    text-decoration: none;
+	color: var(--dark-grayish-blue);
+	text-decoration: none;
 }
 
-footer .links li{
-    margin-right: 20px;
-    padding: 10px;
+footer .links {
+	flex: 3;
 }
 
-footer img{
-    width: 60px;;
+footer .links li {
+	padding: 10px;
+	margin-right: 40px;
 }
 
-
-
-footer .links{
-    flex: 3;
+footer .social li {
+	margin: 0 5px;
 }
 
-footer .social li{
-    margin-right: 10px;
+footer .social a {
+	font-size: 24px;
+	margin-right: 5px;
 }
-
-
-footer .social a{
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
 
 
 
@@ -288,4 +156,20 @@ footer .social a{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 768px) {
+	.flex {
+		flex-direction: column;
+	}
+
+	footer .links {
+		flex-direction: column;
+	}
+
+	footer .links li {
+		padding: 10px;
+		margin-right: 0;
+	}
 }
